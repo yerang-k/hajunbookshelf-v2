@@ -483,8 +483,8 @@ textarea{resize:none; min-height:64px; line-height:1.4;}
      설정: backend/Code.gs를 배포한 뒤 아래 두 값을 채워주세요.
      ponytail: 기기 간 실시간 동기화는 하지 않음(로컬 저장소가 비어있을 때만 복원).
      여러 기기를 동시에 쓰면서 실시간 동기화가 필요해지면 그때 병합 로직 추가. */
-  var API_URL = '';
-  var WRITE_KEY = '';
+  var API_URL = 'https://script.google.com/macros/s/AKfycby_w-aOuUIdZyFaNk0ts0TRCE_UEVAS7o6dU23r-4zbPARQ8Td0WP5aTOvv1Q483y8p/exec';
+  var WRITE_KEY = 'hajunshelf2026';
 
   function syncToBackend(action, payload){
     if(!API_URL) return;
