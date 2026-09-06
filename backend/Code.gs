@@ -60,12 +60,12 @@ function doPost(e) {
     }
 
     if (body.action === 'deleteRead') {
-      deleteRows_(sheet, function (isbn, ts) { return isbn === body.isbn && String(ts) === String(body.ts); });
+      deleteRows_(sheet, function (isbn, ts) { return String(isbn) === String(body.isbn) && String(ts) === String(body.ts); });
       return json_({ ok: true });
     }
 
     if (body.action === 'deleteBook') {
-      deleteRows_(sheet, function (isbn) { return isbn === body.isbn; });
+      deleteRows_(sheet, function (isbn) { return String(isbn) === String(body.isbn); });
       return json_({ ok: true });
     }
 
