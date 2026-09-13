@@ -39,6 +39,7 @@ body{
     radial-gradient(700px 600px at 30% 100%, #E4FBF2 0%, rgba(228,251,242,0) 60%),
     #FCFAFF;
   min-height:100%;
+  background-attachment:fixed;
 }
 h1,h2,h3{font-family:'Jua','Pretendard Variable',sans-serif; font-weight:400; margin:0;}
 button{font-family:inherit;}
@@ -1022,10 +1023,6 @@ textarea{resize:none; min-height:64px; line-height:1.4;}
   hydrateFromBackendIfEmpty();
 })();
 </script>
-<div style="text-align:center;font-size:11px;color:#94a3b8;padding:16px 8px calc(106px + env(safe-area-inset-bottom));line-height:1.6;word-break:keep-all;">
-  하준이의 책장 © 2026 KIMYERANG.<br>
-  본 앱은 자유롭게 사용할 수 있으나, 저작자의 허락 없는<br>
-  복제·배포·수정은 금지합니다.
-</div>
+<div style="position:fixed;left:0;right:0;bottom:calc(2px + env(safe-area-inset-bottom));text-align:center;font-size:9px;line-height:1.2;color:var(--ink-faint);z-index:15;pointer-events:none;word-break:keep-all;">하준이의 책장 © 2026 KIMYERANG · 무단 복제·배포·수정 금지</div>
 </body>
 </html>
